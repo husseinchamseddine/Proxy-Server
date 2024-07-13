@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy Server Interface</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Hello! Enter a URL to Fetch</h1>
+        <form method="POST">
+            <input type="text" name="url" placeholder="Enter URL here">
+            <button type="submit">Fetch</button>
+        </form>
+        <!-- Logout Button -->
+        <form action="{{ url_for('logout') }}" method="get">
+            <button type="submit">Logout</button>
+        </form>
+    </div>
+</body>
+</html>
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy Server Interface</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Hello! Enter a URL to Fetch</h1>
+        <form method="POST">
+            <input type="text" name="url" placeholder="Enter URL here">
+            <button type="submit">Fetch</button>
+        </form>
+    </div>
+</body>
+</html>
+-->
